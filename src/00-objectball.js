@@ -172,6 +172,7 @@ function mostPointsScored() {
 }
 
 function winningTeam() {
+    const game = gameObject()
     let teamPoints = { home: 0, away: 0 }
     for (const team in game) {
         const players = game[team].players
